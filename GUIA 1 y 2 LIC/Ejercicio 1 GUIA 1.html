@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #E0E0E0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #000000;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h2, h3 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #ffffff60;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    p1 {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    /* Estilo para las secciones de la serie */
+    .serie-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.774);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .serie-text {
+      width: 50%;
+      text-align: left;
+      padding-right: 20px;
+    }
+
+    .serie-image {
+      width: 40%;
+    }
+
+    .serie-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado del documento -->
+  <header>
+    <h1>Mis series Favoritas</h1>
+    <nav>
+      <ul>
+        <li><a href="#seccion1">Six feet under</a></li>
+        <li><a href="#seccion2">Breaking Bad</a></li>
+        <li><a href="#seccion3">Mr Robot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección 1 -->
+    <section id="seccion1" class="serie-container">
+      <div class="serie-text">
+        <h2>SIX FEET UNDER</h2>
+        <h3>Género: Drama</h3>
+        <p>Six Feet Under (A dos metros bajo tierra, en algunos países hispanohablantes; Seis pies bajo tierra, en otros) es una serie de televisión estadounidense creada, escrita y producida por Alan Ball y transmitida originalmente desde el 3 de junio de 2001 hasta el 21 de agosto de 2005 por la cadena HBO. Consta de 63 episodios, de unos 55 minutos cada uno, agrupados en cinco temporadas y sigue a los Fisher, una familia que posee y dirige una empresa funeraria.
+
+            El drama conjunto está protagonizado por Peter Krause, Michael C. Hall, Frances Conroy, Lauren Ambrose, Freddy Rodríguez, Mathew St. Patrick y Rachel Griffiths en los papeles centrales. Fue producida por Actual Size Films y The Greenblatt/Janollari Studio, y se rodó en locaciones de Los Ángeles y en estudios de Hollywood.</p>
+
+        <h3>Personajes Principales</h3>
+        <ul>
+          <li>Nate</li>
+          <li>David</li>
+          <li>Claire</li>
+        </ul>
+      </div>
+
+      <div class="serie-image">
+        <img src="imagenes/sixfeetunder.jpg" width="400" height="341" alt="Six Feet Under">
+      </div>
+    </section>
+
+    <!-- Sección 2 -->
+    <section id="seccion2" class="serie-container">
+      <div class="serie-text">
+        <h2>BREAKING BAD</h2>
+        <h3>Género: Acción/Drama</h3>
+        <p>Breaking Bad es una serie de televisión estadounidense creada y producida por Vince Gilligan. Situada y producida en Albuquerque, Nuevo México, consiste en la historia de Walter White, 
+            un profesor de química al que diagnostican un cáncer de pulmón inoperable. Walter pasa a una vida de crimen produciendo y distribuyendo metanfetamina junto a un ex-estudiante, Jesse 
+            Pinkman, con el objetivo de conseguir suficiente dinero para el futuro de su familia tras su inevitable muerte.
+            Breaking Bad ha recibido una gran aclamación por parte de la crítica y está considerada como una de las mejores series televisivas de todos los tiempos. Según se emitían sus temporadas 
+            los comentarios positivos transmitidos de boca en boca entre espectadores fueron aumentando, lo que condujo a un gran incremento de la popularidad de la serie. A 2013, Breaking Bad es
+             uno de los programas de televisión por cable más vistos en los Estados Unidos: la audiencia de la segunda mitad de la quinta temporada duplicó a la de la primera.</p>
+
+        <h3>Personajes Principales</h3>
+        <ul>
+          <li>Walter White</li>
+          <li>Jesse</li>
+          <li>Saul</li>
+        </ul>
+      </div>
+
+      <div class="serie-image">
+        <img src="imagenes/Breaking-Bad.jpg" width="400" height="341" alt="Breaking Bad">
+      </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="seccion3" class="serie-container">
+      <div class="serie-text">
+        <h2>MR ROBOT</h2>
+        <h3>Género: Drama/Psicológica</h3>
+        <p>Mr. Robot es una serie de televisión de género tecno-thriller y drama estadounidense creada por Sam Esmail. Está protagonizada por Rami Malek como Elliot Alderson, 
+            un ingeniero de seguridad informática y pirata informático que padece un trastorno de identidad disociativo, trastorno de ansiedad social y depresión clínica.
+
+            Elliot es reclutado por un anarquista insurreccional conocido como Mr. Robot, interpretado por Christian Slater, para unirse a un grupo de hacktivistas llamado fsociety.
+             El grupo tiene como objetivo destruir todos los registros bancarios de créditos mediante el cifrado de los datos financieros del conglomerado más grande del mundo, E Corp.</p>
+
+        <h3>Personajes Principales</h3>
+        <ul>
+          <li>Elliot</li>
+          <li>Angela</li>
+          <li>Mr Robot</li>
+        </ul>
+      </div>
+      <div class="serie-image">
+        <img src="imagenes/mrrobot.jpg" width="400" height="341" alt="Mr Robot">
+      </div>
+      
+    </section>
+  </main>
+
+  <aside>
+    <br>
+    <p1>&copy; 2024 Ejercicio 1 LIC GUIA 1. Todos los derechos reservados Efrain Cortez.</p1>
+  </aside>
+
+</body>
+</html>

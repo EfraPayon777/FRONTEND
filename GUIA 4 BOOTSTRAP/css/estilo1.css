@@ -1,0 +1,28 @@
+
+/*Estilizando las filas */
+.row{
+margin-top: 30px;
+margin-bottom: 15px;
+}
+
+/*estilizando los div cuya clase comience con "col"*/
+div[class^="col-"]{
+border: 1px solid #AAA;
+padding-top: 10px;
+padding-bottom: 10px;
+background: white;
+}
+body{
+    background-color: #b0bec5;
+}
+@media(min-width: 992px){
+    body{
+        background-color: #81c784;
+    }
+}
+
+@media (min-width: 1200px){
+    body{
+        background-color: #5c6bc0;
+    }
+}

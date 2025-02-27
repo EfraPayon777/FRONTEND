@@ -1,0 +1,113 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos de la cabecera */
+  .banner {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* Estilos del menú */
+  .menu {
+    background-color: #333;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul li {
+    margin: 0 15px;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Sección de artículos */
+  .article {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .article p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Sección de servicios */
+  .services {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .service-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+  }
+  
+  /* Sección de "Sobre Nosotros" */
+  .aside {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Estilos del pie de página */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 1024px) {
+    .service-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu ul {
+      flex-direction: column;
+    }
+  
+    .service-item {
+      width: 100%;
+    }
+  }
+  

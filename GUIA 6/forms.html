@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Dinámico con JavaScript y Bootstrap</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+<h2 class="text-center">Generador de Formularios Dinámicos</h2>
+<form id="form" name="frmconf" class="mb-4">
+<div class="form-group">
+<label for="selcontrol">Seleccione el tipo de control:</label>
+<select id="selcontrol" name="selcontrol" class="form-control" required>
+<option value="">Seleccione...</option>
+<option value="text">Texto</option>
+<option value="password">Contraseña</option>
+<option value="textarea">Área de texto</option>
+<option value="checkbox">Checkbox</option>
+<option value="radio">Radio</option>
+<option value="file">Archivo</option>
+<option value="button">Botón</option>
+</select>
+</div>
+<div class="form-group">
+<label for="txtnum">Número de campos:</label>
+<input type="number" id="txtnum" name="txtnum" class="form-control" min="1" required>
+</div>
+<button type="submit" class="btn btn-primary">Generar Formulario</button>
+</form>
+<!-- Vista donde se mostrará el formulario dinámico -->
+<div id="view" class="border p-4 bg-light rounded"></div>
+</div>
+<script src="formcontrols.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

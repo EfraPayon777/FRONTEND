@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/> 
+    <title>Calculadora Básica</title> 
+    <!-- Enlace a Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div id="operaciones" class="mb-3">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary btn-block" data-op="sumar">Sumar</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block" data-op="restar">Restar</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block" data-op="multiplicar">Multiplicar</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block" data-op="dividir">Dividir</button>
+            </div>
+        </div>
+    </div>
+    <div id="resultado" class="alert alert-info text-right p-4">
+    0 <!-- Resultado inicial -->
+    </div>
+</div>
+<!-- Agregar los scripts necesarios de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="calculadora.js"></script>
+</body>
+</html>

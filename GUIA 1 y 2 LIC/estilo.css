@@ -1,0 +1,15 @@
+*{
+    color:#cb4335;
+}
+
+ol
+{
+    color: #cb4335;
+    font-size: 25px;
+
+}
+.articulos >p 
+{
+    background-color: aqua;
+    color:blue   
+}

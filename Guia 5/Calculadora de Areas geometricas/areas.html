@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/> 
+    <title>Áreas Geométricas</title> 
+    <!-- Enlace a Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        /* Estilos para centrar los botones e imágenes */
+        .btn-img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-img-container img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px; /* Separación entre botón e imagen */
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div id="operaciones" class="mb-3">
+        <div class="row">
+            <div class="col-3">
+                <div class="btn-img-container">
+                    <button class="btn btn-primary btn-block" data-op="Circulo">Círculo</button>
+                    <img src="img/circulo.png" alt="Imagen del círculo">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn-img-container">
+                    <button class="btn btn-primary btn-block" data-op="Triangulo">Triángulo</button>
+                    <img src="img/triangulo.png" alt="Imagen del triángulo">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="btn-img-container">
+                    <button class="btn btn-primary btn-block" data-op="Cuadrado">Cuadrado</button>
+                    <img src="img/rectangulo.png" alt="Imagen del cuadrado">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resultado" class="alert alert-info text-right p-3">
+        0 <!-- Resultado inicial -->
+    </div>
+</div>
+<!-- Agregar los scripts necesarios de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="calculos de areas.js"></script>
+</body>
+</html>
