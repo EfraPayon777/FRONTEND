@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manipulación de Estilos CSS</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+/* Estilo inicial para los elementos */
+h3 {
+color: blue;
+font-size: 20pt;
+background-color: lightgray;
+}
+</style>
+</head>
+<body>
+<div class="container mt-5">
+<h2 class="text-center">Manipulación de Reglas CSS</h2>
+<div class="row mt-4">
+<div class="col-md-12 text-center">
+<button id="enabled" class="btn btn-success mx-2">Habilitar Estilos</button>
+<button id="disabled" class="btn btn-danger mx-2">Deshabilitar Estilos</button>
+<button id="change" class="btn btn-warning mx-2">Modificar Estilo</button>
+<button id="remove" class="btn btn-danger mx-2">Borrar Estilo</button>
+<button id="add" class="btn btn-primary mx-2">Añadir Estilo</button>
+</div>
+</div>
+<div class="row mt-4">
+<div class="col-md-12 text-center">
+<h3>Este es un título que se puede modificar</h3>
+</div>
+</div>
+</div>
+<script src="js/estilosdom.js"></script> <!-- Aquí se carga el archivo JS externo -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

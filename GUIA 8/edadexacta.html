@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcular Edad</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+<h2 class="text-center">Calcular Edad Exacta</h2>
+<form name="frmFechaNac" id="frmFechaNac">
+<div class="form-group">
+<label for="selmes">Mes de Nacimiento:</label>
+<select id="selmes" class="form-control" name="selmes">
+<option value="">Selecciona un mes</option>
+<option value="Enero">Enero</option>
+<option value="Febrero">Febrero</option>
+<option value="Marzo">Marzo</option>
+<option value="Abril">Abril</option>
+<option value="Mayo">Mayo</option>
+<option value="Junio">Junio</option>
+<option value="Julio">Julio</option>
+<option value="Agosto">Agosto</option>
+<option value="Septiembre">Septiembre</option>
+<option value="Octubre">Octubre</option>
+<option value="Noviembre">Noviembre</option>
+<option value="Diciembre">Diciembre</option>
+</select>
+</div>
+<div class="form-group">
+<label for="seldia">Día de Nacimiento:</label>
+<select id="seldia" class="form-control" name="seldia" disabled>
+<option value="">Selecciona un día</option>
+</select>
+</div>
+<div class="form-group">
+<label for="txtano">Año de Nacimiento:</label>
+<input type="number" id="txtano" class="form-control" name="txtano" placeholder="Ingresa el año">
+</div>
+<button type="button" id="calcular" class="btn btn-primary">Calcular Edad</button>
+</form>
+</div>
+<script src="js/calculoedad.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Interés Compuesto</title>
+</head>
+<body>
+
+    <h2>Cálculo de Interés Compuesto</h2>
+    
+    <!-- Formulario para capturar los datos -->
+    <form id="formulario">
+        <label for="montoInicial">Monto Inicial ($): </label>
+        <input type="number" id="montoInicial" required><br><br>
+
+        <label for="tasaInteres">Tasa de Interés Anual (%): </label>
+        <input type="number" id="tasaInteres" required><br><br>
+
+        <label for="tiempo">Tiempo (años): </label>
+        <input type="number" id="tiempo" required><br><br>
+
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+
+    <!-- Área donde se mostrará el resultado -->
+    <div id="resultado"></div>
+
+    <!-- Referencia al archivo JS -->
+    <script src="js/interes.js"></script>
+</body>
+</html>
